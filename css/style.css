@@ -1,0 +1,244 @@
+ h1	{
+ text-align: center;
+ color:orangered;
+ font-size: 50px;
+ font-family:'anime_kids';
+ }
+ h2 {
+ text-align: center;
+ color:orangered;
+ font-size: 40px; 
+ font-family:'anime_kids';
+ }
+ p {
+ font-size: 30px;
+ text-align: center;
+ color:white;
+ font-family:'anime_kids';
+ }
+ body {
+	 padding: 0px;
+	 margin: 0px;
+ }
+ .blinking-text {
+	 display: flex;
+	 justify-content: center; 
+	 font-size: 45px;
+ }
+ .blinking-text span {
+	 position:relative;
+	 display:inline-block;
+	 font-size: 45px;
+ }
+ .blinking-text span::after {
+	 content: attr(data-letter);
+	 display:inline-block;
+	 position: absolute;
+	 left:0;
+	 color: #30E398;
+	 text-shadow: 
+	 0 0 2px #30E398,
+	 0 0 10px #30E398;
+	 opacity: 0;
+	 animation: blinking 1.25s
+	 ease-in-out infinite;
+ } 
+ .blinking-text span:nth-child(1)::after{animation-delay:0.5s}
+ .blinking-text span:nth-child(2)::after{animation-delay:0.4s}
+ .blinking-text span:nth-child(3)::after{animation-delay:0.3s}
+ .blinking-text span:nth-child(4)::after{animation-delay:0.2s}
+ .blinking-text span:nth-child(5)::after{animation-delay:0.1s}
+ .blinking-text span:nth-child(6)::after{animation-delay:0.2s}
+ .blinking-text span:nth-child(7)::after{animation-delay:0.3s}
+ .blinking-text span:nth-child(8)::after{animation-delay:0.4s}
+ .blinking-text span:nth-child(9)::after{animation-delay:0.5s}
+ .blinking-text span:nth-child(10)::after{animation-delay:0.4s}
+ .blinking-text span:nth-child(11)::after{animation-delay:0.3s}
+ .blinking-text span:nth-child(12)::after{animation-delay:0.2s}
+ .blinking-text span:nth-child(13)::after{animation-delay:0.1s}
+ .blinking-text span:nth-child(14)::after{animation-delay:0.2s}
+ .blinking-text span:nth-child(15)::after{animation-delay:0.3s}
+ .blinking-text span:nth-child(16)::after{animation-delay:0.4s}
+ .blinking-text span:nth-child(17)::after{animation-delay:0.5s}
+ .blinking-text span:nth-child(18)::after{animation-delay:0.4s} 
+ .blinking-text span:nth-child(19)::after{animation-delay:0.3s}
+ .blinking-text span:nth-child(20)::after{animation-delay:0.2s}
+ .blinking-text span:nth-child(21)::after{animation-delay:0.1s}
+ .blinking-text span:nth-child(22)::after{animation-delay:0.2s}
+ .blinking-text span:nth-child(23)::after{animation-delay:0.3s}
+ .blinking-text span:nth-child(24)::after{animation-delay:0.4s}
+ .blinking-text span:nth-child(25)::after{animation-delay:0.5s}
+ .blinking-text span:nth-child(26)::after{animation-delay:0.4s}
+ .blinking-text span:nth-child(27)::after{animation-delay:0.3s}
+ .blinking-text span:nth-child(28)::after{animation-delay:0.2s}
+ .blinking-text span:nth-child(29)::after{animation-delay:0.1s}
+ .blinking-text span:nth-child(30)::after{animation-delay:0.2s}
+ .blinking-text span:nth-child(31)::after{animation-delay:0.3s}
+ .blinking-text span:nth-child(32)::after{animation-delay:0.4s}
+ .blinking-text span:nth-child(33)::after{animation-delay:0.5s}
+ .blinking-text span:nth-child(34)::after{animation-delay:0.4s}
+ .blinking-text span:nth-child(35)::after{animation-delay:0.3s}
+ .blinking-text span:nth-child(36)::after{animation-delay:0.2s}
+ .blinking-text span:nth-child(37)::after{animation-delay:0.1s}
+ .element {
+	 width: 100px;
+	 margin-top: 20px;
+	 margin-left: auto;
+	 margin-right: auto;
+	 font-family:'anime_kids';
+	 color:red;
+	 font-size: 30px;
+ }
+ .infobulle {
+	 transform : scale(0) rotateY(-180deg);
+	 position: absolute;
+	 background-color: #2e3048;
+	 color : white;
+	 padding:8px;
+	 border-radius: 5px;
+	 margin-top:10px;
+	 border-bottom: 3px solid rbga (255,255,255,0.5);
+	 border-left: 10px solid transparent;
+	 border-right: 10px solid transparent;
+	 transition: 1s;
+ }
+ .infobule::before{
+	 content: '';
+	 position: absolute;
+	 border-bottom: 8px solid #FFFFFF;
+	 border-left: 8px solid transparent;
+	 border-right: 8px solid transparent;
+	 margin-top: -16px;
+	 margin-left: 10px;
+ }
+ .element:hover > .infobulle {
+	 transform: scale(1) rotateY(0deg);
+ }
+ .right {
+	text-align:right;
+ }
+ img {
+	 display: block;
+	 margin-right: auto;
+	 margin-left: auto;
+ }
+ a {
+ font-size: 20px;
+ text-align: center;
+ color:blue;
+ font-family:'anime_kids';
+ }
+ ul {
+ font-size: 30px;
+ text-align: left;
+ color:blue;
+ font-family:'anime_kids';
+ }
+header{
+	height: 80px;
+	margin: 10px;
+}
+nav ul li{
+		list-style-type: none;
+		display: inline-block;
+		padding: 10px;
+}
+ul li a{
+letter-spacing: 0.1rem;
+}
+ul li a{
+	text-decoration: underline;
+}
+.menu {
+	position:sticky;
+	top:0;
+	left:0;
+	background-color: #2B1DCC;
+	border: 5px;
+	border-collapse:none;
+}
+.menu > ul {
+	display:flex;
+	list-style:none;
+}
+.menu li a {
+	padding:20px;
+	display:block;
+	text-decoration:none;
+	color: #000;
+}
+ConteneurLateral {
+	width: 15px;
+	height: 27px;
+	Border: 1px solid red;
+}
+ConteneurIcone {
+	width: 12px;
+	height: 17px;
+	Border: 1px solid red;
+}
+table{
+	border-collapse: collapse;
+	min-width: 400px;
+	width: auto;
+	box-shadow: 0 5px 50px rgba(0,0,0,0.15);
+	cursor: pointer;
+	margin: 100px;
+	border: 2px solid midnightblue;
+	/* border: 2px midnightblue; */
+	border: 1px solid #ddd;
+	vertical-align:top;
+}
+thread tr{
+	background-color: midnightblue;
+	text-align: left;
+	color: #fff;
+}
+th,td{
+	padding: 10px px;
+}
+tbody tr, td, th{
+	border: 1px solid #ddd;
+}
+tbody tr:nth-child(even){
+	background-color: f3f3f3;
+}
+tbody tr:last-of-type{
+	border-bottom: 2px solid white;
+}
+@font-face {
+	font-family:'anime_kids';
+	src: url("../police/animekids/animekids.otf");
+}
+@keyframes blinking {
+	0% {
+	 opacity:0;
+	}
+	30% {
+	 opacity:1;
+	}
+	50% {
+	 opacity:0;
+	}
+}
+ 
+ /* dans la page html j'ai utiliser divers attributs pour pouvoir modifier le fichier html pour qu'il soit le plus complet possible */
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
